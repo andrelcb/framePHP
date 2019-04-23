@@ -7,7 +7,7 @@ class IndexController extends Action{
 
     public function index() {
         $this->dados['arrayObjeto'] = ["sofa", "cadeira", "cama"];
-        $this->twig->render('index/index', $this->dados);
+        echo $this->twig->render('index/index.twig', $this->dados);
     }
 
     public function sobreNos() {

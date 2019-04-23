@@ -10,14 +10,14 @@ abstract class Action {
     protected $dados = [];
     
     public function __construct() {
-        $twig = $this->obterTwig();
+        $this->twig = $this->obterTwig();
     }
 
     protected function obterTwig () {
-        $loader = new Twig_Loader_FileSystem('Views/');
+        $loader = new \Twig\Loader\FilesystemLoader('../App/Views');
 
-        $twig = new Twig_Environment($loader, [
-          "cache" => "Views/cache",
+        $twig = new \Twig\Environment($loader, [
+          "cache" => "../App/Views/cache",
           "cache" => false  
         ]);
   
