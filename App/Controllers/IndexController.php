@@ -6,8 +6,9 @@ use Frame\Controller\Action;
 class IndexController extends Action{
 
     public function index() {
-        $this->dados['arrayObjeto'] = ["sofa", "cadeira", "cama"];
-        echo $this->twig->render('index/index.twig', $this->dados);
+        $this->view->dados['titulo'] = 'Inicio';
+        $this->view->dados['arrayObjeto'] = ["sofa", "cadeira", "cama"];
+        $this->render('index', $this->view->dados);
     }
 
     public function sobreNos() {
