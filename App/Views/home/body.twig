@@ -1,0 +1,25 @@
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand-md navbar-dark bg-danger larger">
+            <div class="container">
+                <a class="navbar-brand" href="/">FramePHP</a>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/documentacao">Documentação <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/sobre_nos">Sobre Nós <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {% block body %}
+        {{ include(body) }}
+    {% endblock %}
+</body>

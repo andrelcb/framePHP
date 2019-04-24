@@ -1,21 +1,20 @@
-<h1>Index</h1>
-<hr>
-
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <td>#</td>
-            <td>Descrição</td>
-            <td>Preço</td>
-        </tr>
-    </thead>
-    <tbody>
-        {% for dados in arrayObjeto %}
-            <tr>
-                <td>{{ dados.id }}</td>
-                <td>{{ dados.descricao }}</td>
-                <td>{{ dados.preco }}</td>
+<div class="container mt-5">
+    <table class="table table-bordered">
+        <thead>
+            <tr>    
+                <td>#</td>
+                <td>Descrição</td>
+                <td>Preço</td>
             </tr>
-        {% endfor %}
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            {% for dados in arrayObjeto %}
+                <tr>
+                    <td>{{ dados.id }}</td>
+                    <td>{{ dados.descricao }}</td>
+                    <td>{{ dados.preco }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

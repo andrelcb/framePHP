@@ -22,7 +22,7 @@ class IndexController extends Action{
     public function sobreNos() {
         $this->view->dados['titulo'] = 'Sobre Nos';
         $this->view->dados['arrayObjeto'] = ["notebook","nos"];
-        $this->render('sobreNos', 'layout2');
+        $this->render('sobreNos', 'layout1');
     }
 
 
