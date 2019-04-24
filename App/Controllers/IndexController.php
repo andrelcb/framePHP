@@ -16,13 +16,13 @@ class IndexController extends Action{
         $produtos = $produto->getProdutos();
         $this->view->dados['arrayObjeto'] = $produtos;
 
-        $this->render('index', 'layout1');
+        $this->render('index', 'layout');
     }
 
     public function sobreNos() {
         $this->view->dados['titulo'] = 'Sobre Nos';
         $this->view->dados['arrayObjeto'] = ["notebook","nos"];
-        $this->render('sobreNos', 'layout1');
+        $this->render('sobreNos', 'layout');
     }
 
 
